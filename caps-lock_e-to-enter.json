@@ -1,0 +1,20 @@
+{
+  "description": "Map Caps Lock + e to Enter",
+  "manipulators": [
+    {
+      "conditions": [
+        {
+          "name": "caps_lock pressed",
+          "type": "variable_if",
+          "value": 1
+        }
+      ],
+      "from": {
+        "key_code": "e",
+        "modifiers": { "optional": ["any"] }
+      },
+      "to": [{ "key_code": "return_or_enter" }],
+      "type": "basic"
+    }
+  ]
+}
